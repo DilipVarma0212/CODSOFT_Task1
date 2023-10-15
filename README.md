@@ -23,12 +23,12 @@ Key Question of the dashboard :
 
 Insight of the dashboard :
 
-417 is the Total Passenger were in Titanic.
-Total Passenger Survived  152 and No Survived 265.
-The Averege Age of Passenger is 23.98
-In First Class more Percentage of Passenger Survived of 47% & In Second Class more Percentage of Passenger Dead of 68%
-Total Percentage of Passenger Survived 36.45% and Total Percentage of Passenger Not-survived 63.55%
-By Age group Total Passenger of Young Age127, Middle Age 277 and Old Age 13.
+        417 is the Total Passenger were in Titanic.
+        Total Passenger Survived  152 and No Survived 265.
+        The Averege Age of Passenger is 23.98
+        In First Class more Percentage of Passenger Survived of 47% & In Second Class more Percentage of Passenger Dead of 68%
+        Total Percentage of Passenger Survived 36.45% and Total Percentage of Passenger Not-survived 63.55%
+        By Age group Total Passenger of Young Age127, Middle Age 277 and Old Age 13.
 
 
 DAX Query :
@@ -42,11 +42,4 @@ DAX Query :
     Age Group = IF(Data[Age]<18, "Young Age", If(Data[Age]<60, "Middle Age", "Old Age"))
     Boarding Types = IF(Data[Embarked] = "C", "Cherbourg", IF(Data[Embarked] = "S", "Southampton", "Queenstown"))
     Passenger Class = IF(Data[Pclass] = 1, "First Class", IF(Data[Pclass] = 2, "Second Class", "Third Class"))
-
-
-
-
-
-
-
 
